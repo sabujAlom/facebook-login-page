@@ -1,0 +1,179 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: 1c1e21;
+}
+
+/* body area style  */
+#body_area{
+    background-color:#f7f7f3;
+}
+
+#content_area{
+    width: 980px;
+    padding:20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 0 112px;
+    align-items: center;
+}
+.left_side{
+    flex-basis: 540px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.left_side img{
+    width: 300px;
+}
+.left_side h2{
+    font-size: 28px;
+    letter-spacing: normal;
+    font-weight: normal;
+    padding-left: 30px;
+    color: #1c1e21;
+}
+
+
+.form_side{
+    flex-basis: 396px;
+    text-align: center;
+    
+}
+.form_side form{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+
+}
+.form_side input{
+    display: block;
+    width: 100%;
+    padding:14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.form_side input[type="button"]{
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form_side a{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+.form_side a:hover{
+    text-decoration: underline;
+}
+.form_side button[type="button"]{
+    background-color: #36a420;
+    border: 1px solid #36a420;
+    padding: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+
+
+
+}
+.form_side p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #1c1e21;
+    
+}
+
+.form_side p a{
+    color:#1c1e21;
+}
+
+/* Footer Area------------------------------------------------------*/
+#footer_side{
+    background-color: #fff;
+    padding: 25px 0;
+}
+#footer_side ul{
+    text-align: left;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+
+}
+#footer_side ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+#footer_side ul li a{
+    color: #797373;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+#footer_side ul li a:hover{
+    text-decoration: underline;
+}
+#footer_side p{
+    color: #797373;
+    
+}
+
+
+
+.container{
+    width: 980px;
+    padding:20px;
+    margin: 0 auto;
+    
+}
+
+/* mobaile for responsive---------------------------------------------- */
+@media screen and (max-width: 520px) {   
+.container{
+    width: 96%;
+}
+#content_area{
+    flex-direction: column;
+    padding: 35px 0;
+}
+.left_side{
+    flex-basis: 100%;
+    text-align: center;
+}
+.left_side h2{
+    font-size: 22px;
+    padding-left: 0px;
+    margin-bottom: 40px;
+ }
+.form_side{
+    flex-basis: 100%;
+    text-align: center;
+ }
+}
